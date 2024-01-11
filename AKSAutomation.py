@@ -2,7 +2,7 @@ from azure.identity import DefaultAzureCredential
 from azure.mgmt.kubernetesconfiguration import SourceControlConfigurationClient
 from azure.mgmt.containerservice import ContainerServiceClient
 
-sub_id = "hidden"
+sub_id = "your subscription ID"
 client = SourceControlConfigurationClient(credential=DefaultAzureCredential(), subscription_id=sub_id)
 
 def list_kubernetes_clusters_with_tag(resource_group_name, tag_key, tag_value):
